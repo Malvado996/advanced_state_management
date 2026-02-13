@@ -68,12 +68,12 @@ function App() {
   }
 
   const ctxValue = {
-    items: setShoppingCart.items,
+    items: shoppingCart.items,
     addItemToCart: handleAddItemToCart
   }
 
   return (
-    <CartContext value={ctxValue}>
+    <CartContext value={shoppingCart}>
       <Header
         cart={shoppingCart}
         onUpdateCartItemQuantity={handleUpdateCartItemQuantity}
